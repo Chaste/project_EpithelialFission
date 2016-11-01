@@ -17,8 +17,7 @@
  *
  * In this test we show how Chaste can be used to analyse the incidence of buckling in a layer of epithelial cells.
  * Details of the computational model can be found in
- * Almet et al (2016) "Paneth cell-rich regions separated by a cluster of Lgr5+ cells initiate
- * fission in the intestinal stem cell niche".
+ * Almet et al (2016) "A multicellular model of intestinal crypt fission".
  *
  * == Including header files ==
  *

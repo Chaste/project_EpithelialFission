@@ -1,4 +1,4 @@
-= Investigation of Crypt Fission in an Epithelial Layer =
+= Investigation of Buckling and Fission in an Epithelial Layer =
 
 This section contains pages generated automatically from the source code accompanying Almet et al. (2016) 
 "A multicellular model of intestinal crypt fission". 
@@ -18,7 +18,7 @@ For manual installation of each dependency, on any version of Linux, see Develop
 
 You will also need the source for the EpithelialFissionJtb2016 project.  This can be done by checking out the version from the repository by using the command 
 {{{
-svn checkout https://chaste.cs.ox.ac.uk/svn/chaste/projects/EpithelialFissionJtb2016
+svn checkout https://chaste.cs.ox.ac.uk/svn/chaste/projects/EpithelialFission
 }}}
 in the projects folder of the Chaste directory. You will need to use the supplied username and password.
 
@@ -35,16 +35,16 @@ There are two folders - `src` and `test`.
   * `FixedRegionPlaneBoundaryCondition.xpp` - boundary conditin that fixes cells past a certain region.
   * `StochasticTargetProportionBasedCellCycleModel.xpp` - asymmetric-division-based cell cycle model to control the proportino of soft cells in the layer.
  2. The `test` folder contains:
-  * [wiki:PaperTutorials/EpithelialFissionJtb2016/CryptFissionSweeps TestCryptFissionSweepsLiteratePaper.hpp] - this file can be run to generate the results in Figures 7-12.
+  * [wiki:PaperTutorials/EpithelialFission/CryptFissionSweeps TestCryptFissionSweepsLiteratePaper.hpp] - this file can be run to generate the results in Figures 7-12.
  == Running tests ==
 You can then run tests and simulations with,
 {{{
 cd <Chaste3.4 path>
-scons b=GccOpt cl=0 co=1 ts=projects/EpithelialFissionJtb2016/test/TestCryptFissionSweepsLiteratePaper.hpp
+scons b=GccOpt cl=0 co=1 ts=projects/EpithelialFission/test/TestCryptFissionSweepsLiteratePaper.hpp
 }}}
 Note that this will only compile the test. The following commands will run the simulation over the random number generator seed range {{{INIT_SEED}}}-{{{FINAL_SEED}}}:
 {{{
-cd projects/EpithelialFissionJtb2016/test/
+cd projects/EpithelialFission/test/
 sh run_script_for_epithelial_layer_sweeps.sh INIT_SEED FINAL_SEED
 }}}
 ----

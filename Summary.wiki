@@ -3,7 +3,7 @@
 This section contains pages generated automatically from the source code accompanying Almet et al. (2016) 
 "A multicellular model of intestinal crypt fission". 
 
-This model is an extension on a model originally presented in Langlands et al. (2016) http://dx.doi.org/10.1371/journal.pbio.1002491.
+This model is an extension on a model originally presented in Langlands et al. (2017) http://dx.doi.org/10.1371/journal.pbio.1002491.
 The code to run single simulations can be found at the Paper Tutorial for that paper, [wiki:PaperTutorials/CryptFissionPlos2016/CryptFission TestCryptFissionLiteratePaper.hpp]
 
 Before looking at this, you may wish to look at some of the [wiki:UserTutorials basic user tutorials] for Chaste.
@@ -16,7 +16,7 @@ The easiest way to do this is using an Ubuntu machine (or an Ubuntu virtual mach
 Note that Chaste is only fully supported on !Linux/Unix systems, so users of Windows or Mac OS X may need to follow the virtual machine route.
 For manual installation of each dependency, on any version of Linux, see DeveloperInstallGuide.
 
-You will also need the source for the EpithelialFissionJtb2016 project.  This can be done by checking out the version from the repository by using the command 
+You will also need the source for the EpithelialFission project.  This can be done by checking out the version from the repository by using the command 
 {{{
 svn checkout https://chaste.cs.ox.ac.uk/svn/chaste/projects/EpithelialFission
 }}}
@@ -35,7 +35,7 @@ There are two folders - `src` and `test`.
   * `FixedRegionPlaneBoundaryCondition.xpp` - boundary conditin that fixes cells past a certain region.
   * `StochasticTargetProportionBasedCellCycleModel.xpp` - asymmetric-division-based cell cycle model to control the proportino of soft cells in the layer.
  2. The `test` folder contains:
-  * [wiki:PaperTutorials/EpithelialFission/CryptFissionSweeps TestCryptFissionSweepsLiteratePaper.hpp] - this file can be run to generate the results in Figures 7-12.
+  * [wiki:PaperTutorials/EpithelialFission/CryptFissionSweeps TestCryptFissionSweepsLiteratePaper.hpp] - this file can be run to generate the results in Figures 6-11.
  == Running tests ==
 You can then run tests and simulations with,
 {{{
